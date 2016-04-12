@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic);
+
+body {
+  color: #000;
+  font-size: 1em;
+}
+
+nav {
+  background-color: #5272ac;
+  height: 30px;
+  color: #fff;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+ul li{
+  display: inline-block;
+  padding: 0em 1em;
+  margin: 1em;
+}
+
+a {
+  text-decoration:none;
+}
+
+body, nav, #date {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav, #date {
+  font-size: 0.75em;
+  font-weight: bold;
+  text-align: center;
+}
+
+#date, a, h1 {
+  color: #5272ac;
+}
+
+h1 {
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.story {
+  width: 200px;
+}
+
+.story img {
+    width: 200px;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+hr {
+  width: 200px;
+}
+
+#contact {
+  text-align: center;
+}
