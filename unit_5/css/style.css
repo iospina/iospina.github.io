@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic);
+
+body {
+  color: #000;
+  font-size: 16px; /*1em = 16px*/
+  margin: 0px;
+  line-height: 1.5em;
+}
+
+#wrapper {
+  margin: auto;
+}
+
+#topNav, #sources {
+  background-color: #5272ac;
+}
+
+#topNav, footer {
+  height: 3.125em;
+  font-size: 0.9375em;
+  font-weight: normal;
+  text-align: center;
+}
+
+a {
+  text-decoration:none;
+}
+
+#topNav a, #sources a {
+  color: #fff;
+}
+
+#topNav ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+ul {
+    -webkit-margin-before: 0em;     
+    -webkit-margin-after: 0em;
+}
+
+ul li{
+  display: inline-block;
+  padding: 0em 1em;
+  margin: 0.625em;
+}
+
+#topNav ul li {
+  display: inline-block;
+}
+
+a {
+  text-decoration:none;
+}
+
+body, #topNav, time {
+    font-family: 'Open Sans', sans-serif;
+}
+
+time {
+  font-size: 0.75em;
+  font-weight: bold;
+  text-align: center;
+}
+
+time, a, h1 {
+  color: #5272ac;
+}
+
+h1 {
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.25em;
+}
+
+section, aside{
+  display: inline-block;
+}
+
+.story {
+  width: 15em;
+  margin: 3em;
+  display: inline-block;
+}
+
+.story img {
+    width: 100%;
+}
+
+h2 {
+  border-bottom: 2px solid #5272ac;
+  width: 100%;
+}
+
+#sources ul {
+  display: inline-block;
+  text-align: left;
+}
+
+#sources li {
+  display: block;
+}
+
+#contact {
+  text-align: center;
+}
+
+header, nav, aside, article, footer, div, section {
+    border: 1px black solid;
+    padding: 20px;
+}
+
+header {background-color:  #FFED74}
+nav {background-color: #E8C66A}
+aside {background-color: #FFC675}
+article {background-color: #E89C6C}
+footer {background-color:#FF957E}
+div, section {background-color:#FFE2B8}
