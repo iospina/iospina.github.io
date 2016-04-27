@@ -79,9 +79,7 @@ h1 {
   font-size: 2.25em;
 }
 
-section, aside{
-  display: inline-block;
-}
+
 
 .story {
   width: 15em;
@@ -122,3 +120,46 @@ aside {background-color: #FFC675}
 article {background-color: #E89C6C}
 footer {background-color:#FF957E}
 div, section {background-color:#FFE2B8}
+
+#two_column {
+  background-color: #ffb7cf;
+  border: 1px black solid;
+  padding: 20px;
+}
+
+#left {
+  background-color: #e582a2;
+  border: 1px black solid;
+  padding: 20px;
+}
+
+#right {
+  background-color: #e55b88;
+  border: 1px black solid;
+  padding: 20px;
+}
+
+#left {
+  background-color: violet;
+  border: 1px black solid;
+  padding: 20px;
+  float: left;
+  width: 30%;
+}
+
+#right {
+  background-color: pink;
+  border: 1px black solid;
+  padding: 20px;
+  float: right;
+  width: 62%;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear:both;
+  height: 0;
+}
