@@ -9,53 +9,55 @@ body {
   line-height: 1.5em;
 }
 
-.wrapper {
+.wrapper, #main-wrapper {
+  width: 92.5%;
   margin: auto;
 }
 
-#topNav, #footer {
+nav, #footer {
   background-color: #5272ac;
 }
 
-#topNav {
-  height: 2.770833333em;
-  font-size: 0.8197115385em;
+nav {
+  font-size: 0.8197em;
   font-weight: normal;
   text-align: center;
 }
 
 a {
-  text-decoration:none;
+  text-decoration: none;
 }
 
-#topNav a, #footer a {
+nav a, #footer a {
   color: #f1f2f2;
 }
 
-#topNav ul {
-  text-align: center;
-  list-style-type: none;
+nav a {
+  height: 2.7708em;
+  display: block;
+  width: 9.0909%;
+  float: left;
+  padding: 0.6788em 0 0 0;
 }
 
-ul li{
-  padding: 0.377604166666667em 2.0833333335em;
-  margin: 0em;
+nav a:hover {
+  color: #fbc0a5;
 }
 
-#topNav ul li {
-  display: inline-block;
-}
-
-body, #topNav, time {
+body, nav, time {
   font-family: 'Open Sans', sans-serif;
+}
+
+#mobile {
+  display: none;
 }
 
 time {
   display: block;
   margin: 0 auto;
-  margin-top:0.21875em;
+  margin-top: 0.2188em;
   font-color: #414042;
-  font-size: 0.71875em;
+  font-size: 0.7188em;
   font-weight: normal;
   text-align: center;
 }
@@ -73,14 +75,12 @@ h1 {
 }
 
 #main-wrapper {
-  width:92.5%;
-  margin:auto;
   margin-top: 1.5em;
 }
 
 #main-story {
-  width:50.0641025641026%;
-  height:21.08229688em;
+  width: 50.0641%;
+  height: 21.0823em;
   float:left;
   background-image: linear-gradient(transparent 60%, rgb(35, 31, 32)), url("https://upload.wikimedia.org/wikipedia/commons/2/24/Yankee_Stadium_001.JPG");
   background-size: cover;
@@ -92,22 +92,22 @@ h1 {
   line-height: 1.25em;
   color: #f1f2f2;
   font-family: 'Lora', serif;
-  font-size: 2.33333em;
+  font-size: 2.3333em;
   font-weight: bold;
 }
 
 #aside {
-  float:left;
-  width:49.9358974358974%;
-  height:21.08229688em;
-  background-color:#231f20;
+  float: left;
+  width: 49.9359%;
+  height: 21.0823em;
+  background-color: #231f20;
 }
 
 .story {
   width: 15em;
   margin: 3em;
   display: inline-block;
-  background-color:#939598;
+  background-color: #939598;
 }
 
 .story img {
@@ -115,9 +115,9 @@ h1 {
 }
 
 footer {
-  height: 2.770833333em;
+  height: 2.7708em;
   color: #f1f2f2;
-  font-size: 0.9258928571em;
+  font-size: 0.9259em;
   font-weight: normal;
   text-align: center;
 }
@@ -127,26 +127,31 @@ h2 {
 }
 
 #footer {
-  margin:auto;
+  margin: auto;
 }
 
 #footer h2 {
   color: #f1f2f2;
   text-align: center;
   font-family: 'Lora', serif;
-  font-size: 1.269345714em;
+  font-size: 1.2694em;
   font-weight: bold;
-  line-height:5em;
+  line-height: 5em;
 }
 
 #sources {
-  line-height: 1.221428571em;
+  line-height: 1.2214em;
   margin: auto;
   text-align: center;
 }
 
+ul li{
+  padding: 0.3776em 2.0833em;
+  margin: 0em;
+}
+
 #sources ul li {
-  font-size: 0.9258928571em;
+  font-size: 0.9259em;
 }
 
 #sources ul {
@@ -169,34 +174,64 @@ h2 {
 
 #contact {
   text-align: center;
-  font-size: 0.850695em;
+  font-size: 0.8507em;
   clear:both;
 }
 
-@media only screen and (max-width: 768px) {
-#sources ul {
-  margin-top:2.442857142em;
+@media only screen and (min-width: 1800px) {
+  body{
+    font-size: 24px;
+  }
+  #main-wrapper{
+    width: 1665px;
+  }
 }
+
+@media only screen and (max-width: 800px) {
+  #mobile {
+    display: block;
+  }
+  
+  nav a {
+    float: none;
+    width: auto;
+    padding: 0.6788em 0 0 0;
+    display: none;
+  }
+
+  nav a:nth-of-type(2), nav a:nth-of-type(3), nav a:nth-of-type(4), nav a:nth-of-type(5), nav a:nth-of-type(6), nav a:nth-of-type(7), nav a:nth-of-type(8), nav a:nth-of-type(9) {
+    float:left;
+    width:50%;
+  }
+
+  nav:hover a {
+    display: block;
+  }
+
+  #sources ul {
+    margin-top: 2.4429em;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-h1 {
-  font-size: 2.53125em;
-}
 
-#main-story {
-  width:100%;
-  height:21.08229688em;
-  float:none;
-  background-image: linear-gradient(transparent, rgb(35, 31, 32)), url("https://upload.wikimedia.org/wikipedia/commons/2/24/Yankee_Stadium_001.JPG");
-  background-size: cover;
-}
+  h1 {
+    font-size: 2.5em;
+  }
 
-#aside {
-  display:none;
-}
+  #main-story {
+    width: 100%;
+    height: 21.0823em;
+    float: none;
+    background-image: linear-gradient(transparent, rgb(35, 31, 32)), url("https://upload.wikimedia.org/wikipedia/commons/2/24/Yankee_Stadium_001.JPG");
+    background-size: cover;
+  }
 
-#sources ul {
-  margin-top:2.442857142em;
-}
+  #aside {
+    display: none;
+  }
+
+  #sources ul {
+    margin-top: 2.4429em;
+  }
 }
