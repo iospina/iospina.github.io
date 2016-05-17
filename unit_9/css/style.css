@@ -76,24 +76,30 @@ h1 {
 
 #main-wrapper {
   margin-top: 1.5em;
+
 }
 
 #main-story {
   width: 50.0641%;
   height: 21.0823em;
   float:left;
-  background-image: linear-gradient(transparent 60%, rgb(35, 31, 32)), url("https://upload.wikimedia.org/wikipedia/commons/2/24/Yankee_Stadium_001.JPG");
+  background-image: linear-gradient(transparent 60%, rgb(35, 31, 32)), url("https://vice-images.vice.com/images/content-images-crops/2016/05/12/the-woman-who-fought-and-won-against-new-yorks-special-prostitution-courts-body-image-1463022138-size_1000.jpg?resize=*:*&output-quality=75");
   background-size: cover;
 }
 
 #main-story h2 {
-  padding: 240px 65px;
+  padding: 10em 0 0 1.5em;
   text-align: left;
+  margin: 0 auto;
   line-height: 1.25em;
   color: #f1f2f2;
   font-family: 'Lora', serif;
-  font-size: 2.3333em;
+  font-size: 1.5555em;
   font-weight: bold;
+}
+
+h2 a {
+  color: #f1f2f2;;
 }
 
 #aside {
@@ -104,9 +110,9 @@ h1 {
 }
 
 .story {
-  width: 15em;
-  margin: 3em;
-  display: inline-block;
+  width: 23.5714%;
+  margin: 4.7143%;
+  float: left;
   background-color: #939598;
 }
 
@@ -208,22 +214,30 @@ ul li{
     display: block;
   }
 
+  .story {
+    width: 100%;
+    margin: 14.2857% 0;
+  }
+
   #sources ul {
     margin-top: 2.4429em;
   }
 }
 
-@media only screen and (max-width: 480px) {
-
+@media only screen and (max-width: 375px) {
   h1 {
     font-size: 2.5em;
+  }
+
+  #main-story img {
+    width: 100%
   }
 
   #main-story {
     width: 100%;
     height: 21.0823em;
     float: none;
-    background-image: linear-gradient(transparent, rgb(35, 31, 32)), url("https://upload.wikimedia.org/wikipedia/commons/2/24/Yankee_Stadium_001.JPG");
+    background-image: linear-gradient(transparent, rgb(35, 31, 32)), url("https://vice-images.vice.com/images/content-images-crops/2016/05/12/the-woman-who-fought-and-won-against-new-yorks-special-prostitution-courts-body-image-1463022138-size_1000.jpg?resize=*:*&output-quality=75");
     background-size: cover;
   }
 
