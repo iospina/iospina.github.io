@@ -40,7 +40,7 @@ nav a {
   padding: 0.6788em 0 0 0;
 }
 
-nav a:hover {
+a:hover {
   color: #fbc0a5;
 }
 
@@ -82,24 +82,28 @@ h1 {
 #main-story {
   width: 50.0641%;
   height: 21.0823em;
-  float:left;
-  background-image: linear-gradient(transparent 60%, rgb(35, 31, 32)), url("https://vice-images.vice.com/images/content-images-crops/2016/05/12/the-woman-who-fought-and-won-against-new-yorks-special-prostitution-courts-body-image-1463022138-size_1000.jpg?resize=*:*&output-quality=75");
+  float: left;
+  background-image: linear-gradient(transparent 60%, rgb(35, 31, 32)), url("https://www.lp.org/files/logo_color_jpg.jpg");
   background-size: cover;
 }
 
+#main-story img {
+  object-position: 50% 50%;
+}
+
 #main-story h2 {
-  padding: 10em 0 0 1.5em;
+  padding: 14em 0 0 1.25em;
   text-align: left;
   margin: 0 auto;
   line-height: 1.25em;
   color: #f1f2f2;
   font-family: 'Lora', serif;
-  font-size: 1.5555em;
+  font-size: 1.1667em;
   font-weight: bold;
 }
 
 h2 a {
-  color: #f1f2f2;;
+  color: #f1f2f2;
 }
 
 #aside {
@@ -110,14 +114,32 @@ h2 a {
 }
 
 .story {
-  width: 23.5714%;
-  margin: 4.7143%;
+  margin-top: 4.7143%;
+  width: 30%;
   float: left;
+}
+
+.story + .story {
+  margin-left: 4.7143%;
+}
+
+.story-image {
+  height: 10.3209em;
   background-color: #939598;
 }
 
-.story img {
-    width: 100%;
+.story-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 10.3209em;
+}
+
+.story h2 a {
+  color: #5272ac;
+}
+
+.story h2 a:hover {
+  color: #fbc0a5;
 }
 
 footer {
@@ -193,7 +215,9 @@ ul li{
   }
 }
 
-@media only screen and (max-width: 800px) {
+/* For Tablet Devices */
+
+@media only screen and (max-width: 768px) {
   #mobile {
     display: block;
   }
@@ -205,13 +229,28 @@ ul li{
     display: none;
   }
 
-  nav a:nth-of-type(2), nav a:nth-of-type(3), nav a:nth-of-type(4), nav a:nth-of-type(5), nav a:nth-of-type(6), nav a:nth-of-type(7), nav a:nth-of-type(8), nav a:nth-of-type(9) {
-    float:left;
-    width:50%;
+  #mobile-nav {
+    display: none;
+    float: left;
+    width: 49%;
   }
 
-  nav:hover a {
-    display: block;
+  .story {
+  margin: 7.1429%;
+  width: 35.7142%;
+  float: left;
+}
+
+  #sources ul {
+    margin-top: 2.4429em;
+  }
+}
+
+/* For Mobile Devices */
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+  #main-story h2 {
+    padding: 7em 0 0 0.625em;
   }
 
   .story {
@@ -219,30 +258,33 @@ ul li{
     margin: 14.2857% 0;
   }
 
-  #sources ul {
-    margin-top: 2.4429em;
+  .story-image {
+    width: 100%;
+    height: 11.0761em;
   }
-}
 
-@media only screen and (max-width: 375px) {
+  .story-image img {
+    width: 100%;
+    height: 11.0761em;
+  }
+
   h1 {
-    font-size: 2.5em;
+    font-size: 1.875em;
   }
 
-  #main-story img {
+  #main-story img, #aside img {
     width: 100%
   }
 
-  #main-story {
+  #main-story, #aside {
     width: 100%;
-    height: 21.0823em;
+    height: 10.6523em;
     float: none;
-    background-image: linear-gradient(transparent, rgb(35, 31, 32)), url("https://vice-images.vice.com/images/content-images-crops/2016/05/12/the-woman-who-fought-and-won-against-new-yorks-special-prostitution-courts-body-image-1463022138-size_1000.jpg?resize=*:*&output-quality=75");
-    background-size: cover;
   }
 
-  #aside {
-    display: none;
+  #main-story {
+    background-image: linear-gradient(transparent, rgb(35, 31, 32)), url("https://www.lp.org/files/logo_color_jpg.jpg");
+    background-size: cover;
   }
 
   #sources ul {
