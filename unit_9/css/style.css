@@ -76,7 +76,6 @@ h1 {
 
 #main-wrapper {
   margin-top: 1.5em;
-
 }
 
 #main-story {
@@ -85,6 +84,7 @@ h1 {
   float: left;
   background-image: linear-gradient(transparent 60%, rgb(35, 31, 32)), url("https://www.lp.org/files/logo_color_jpg.jpg");
   background-size: cover;
+  background-position: center; 
 }
 
 #main-story img {
@@ -100,17 +100,52 @@ h1 {
   font-family: 'Lora', serif;
   font-size: 1.1667em;
   font-weight: bold;
+  width: 50.0641%;
 }
 
 h2 a {
   color: #f1f2f2;
 }
 
-#aside {
+.aside {
   float: left;
   width: 49.9359%;
   height: 21.0823em;
-  background-color: #231f20;
+}
+
+#aside-main {
+  width: 100%;
+  height: 10.0412em;
+}
+
+#aside-main h2 {
+  width: 100%;
+}
+
+#aside-sub {
+  width: 49%;
+  float:left;
+  height: 10.0412em;
+  margin-top: 1em;
+}
+
+#aside-sub h2 {
+  width: 49%;
+}
+
+#aside-sub + #aside-sub {
+  margin-left: 2%
+}
+
+.aside-image {
+  height: 10.0412em;
+  background-color: #939598;
+}
+
+.aside-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 10.0412em;
 }
 
 .story {
@@ -250,7 +285,12 @@ ul li{
 
 @media only screen and (min-width: 320px) and (max-width: 425px) {
   #main-story h2 {
-    padding: 7em 0 0 0.625em;
+    padding: 6.5em 0 0 0.25em;
+    width: 100%;
+  }
+
+  #aside-main h2 {
+    width: 100%;
   }
 
   .story {
@@ -272,19 +312,14 @@ ul li{
     font-size: 1.875em;
   }
 
-  #main-story img, #aside img {
+  #main-story img, .aside img {
     width: 100%
   }
 
-  #main-story, #aside {
+  #main-story, .aside {
     width: 100%;
     height: 10.6523em;
     float: none;
-  }
-
-  #main-story {
-    background-image: linear-gradient(transparent, rgb(35, 31, 32)), url("https://www.lp.org/files/logo_color_jpg.jpg");
-    background-size: cover;
   }
 
   #sources ul {
